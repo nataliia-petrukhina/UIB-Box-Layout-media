@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    background-color: purple;
+    height: 150px;
+}
+
+.flex-item-2 {
+    background-color: blueviolet;
+    height: 150px;
+}
+
+.flex-item-3 {
+    background-color: blue;
+    height: 150px;
+}
+
+.flex-item-4 {
+    background-color: green;
+    height: 150px;
+}
+
+.flex-item-5 {
+    background-color: yellow;
+    height: 150px;
+}
+
+.flex-item-6 {
+    background-color: darkorange;
+    height: 150px;
+}
+
+.flex-item-7 {
+    background-color: red;
+    height: 150px;
+}
+
+@media (min-width: 0px) and (max-width:600px) {
+
+    .flex-container {
+        display: flex;
+        /*  width: 100%; */
+       flex-direction: column;
+        /* flex-wrap: wrap; */
+        box-sizing: border-box;}
+
+}
+
+@media (min-width: 601px) and (max-width:800px) {
+
+    /*     .flex-container {
+        display: flex;
+       flex-direction: column;
+    } */
+
+
+    .flex-item-1,
+    .flex-item-2,
+    .flex-item-6,
+    .flex-item-7 {
+        /*         flex-basis:  100%; nicht richtig oder was */
+        width: 100%;
+    }
+
+    .flex-item-3,
+    .flex-item-4,
+    .flex-item-5 {
+        width: 33.33%
+    }
+}
+
+@media (min-width: 801px) {
+
+    .flex-item-1,
+    .flex-item-2
+    {
+    width: 50%;
+}
+
+.flex-item-3,
+.flex-item-4,
+.flex-item-5
+{
+width: 33.33%;
+}
+
+
+.flex-item-7,
+.flex-item-6
+{
+width: 50%;
+}
+}
+
+/* ich habe es im  1 Stunde und 37 Minuten geshcaft */
